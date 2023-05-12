@@ -1,7 +1,5 @@
 import './style.css';
 
-const list = document.querySelector('.toDoList');
-
 const toDoList = [
   {
     description: 'task 1',
@@ -25,16 +23,25 @@ const toDoList = [
   },
 ];
 
-let $toDoList = '';
+function iterateList(objArray) {
+  const ulList = document.querySelector('.toDoList');
 
-for (let i = 0; i < toDoList.length; i += 1) {
-  $toDoList += `
-    <li>
+  for (let i = 0; i < objArray.length; i += 1) {
+    const list = objArray[i];
+
+    // Create a new li element
+    const li = document.createElement('li');
+    
+    // Set the inner html of the li to the object's properties
+    li.innerHTML = `
       <input type="checkbox">
-      <p>${toDoList.description}</p>
-      <p>${toDoList.completed}</p>
-    </li>
-    `;
+      <p>${list.description}</p>
+      <p>${list.completed}</p>
+      `;
+
+    // Append the li to the ulList element
+    ulList.appendChild(li);
+  }
 }
 
-list.innerHTML = $toDoList;
+iterateList(toDoList)
