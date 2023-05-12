@@ -31,7 +31,7 @@ function iterateList(objArray) {
 
     // Create a new li element
     const li = document.createElement('li');
-    
+
     // Set the inner html of the li to the object's properties
     li.innerHTML = `
       <input type="checkbox">
@@ -44,4 +44,4 @@ function iterateList(objArray) {
   }
 }
 
-iterateList(toDoList)
+iterateList(toDoList);
