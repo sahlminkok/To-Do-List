@@ -17,19 +17,22 @@ body {
 
 .title {
   text-align: left;
-  padding-left: 2%;
-  font-weight: bold;
+  padding-left: 4%;
+  font-weight: 700;
 }
 
 .add {
   font-style: italic;
   width: 90%;
   height: 45px;
-  padding-left: 2%;
+  padding-left: 4%;
   box-sizing: border-box;
   border: none;
   border-bottom: 1px solid #d72631;
+  border-top: 1px solid #d72631;
   outline: none;
+  font-size: 17px;
+  background: transparent;
 }
 
 #addBtn {
@@ -40,9 +43,10 @@ body {
   float: right;
   border: none;
   border-bottom: 1px solid #d72631;
-  background-color: #fff;
+  border-top: 1px solid #d72631;
   margin: 0;
   outline: none;
+  background: transparent;
 }
 
 .toDoList {
@@ -60,6 +64,7 @@ body {
   justify-content: space-between;
   padding: 10px;
   border-bottom: 1px solid #d72631;
+  position: relative;
 }
 
 .div {
@@ -67,11 +72,21 @@ body {
   align-items: center;
 }
 
+.completed {
+  text-decoration: line-through;
+  color: #aaa;
+}
+
 .inputTask {
   background: transparent;
   border: none;
   outline: none;
   font-size: 17px;
+  color: #5c3c92;
+}
+
+.hide {
+  visibility: hidden;
 }
 
 .span {
