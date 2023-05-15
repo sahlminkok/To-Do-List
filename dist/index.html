@@ -3,13 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Webpack Exercise</title>
+    <title>To Do List</title>
 <script defer src="/runtime.bundle.js"></script><script defer src="/main.bundle.js"></script></head>
 <body>
   <main>
     <div class="center">
-      <p class="title">To Do List</p>
-      <input type="text" placeholder="Add to your list..." class="add">
+      <h3 class="title">To Do List</h3>
+      <form>
+        <input type="text" placeholder="Add to your list..." class="add">
+        <input type="submit" tabindex="-1" value="" id="addBtn">
+      </form>
       <ul class="toDoList">
 
       </ul>
