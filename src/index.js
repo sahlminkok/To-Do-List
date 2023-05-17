@@ -16,4 +16,11 @@ function addTask() {
 const add = document.querySelector('#addBtn');
 add.addEventListener('click', addTask);
 
+function clearCompletedTasks() {
+  todoList.clearCompletedTasks();
+}
+
+const clearTasks = document.querySelector('.clear');
+clearTasks.addEventListener('click', clearCompletedTasks);
+
 todoList.renderTasks();
