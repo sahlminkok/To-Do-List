@@ -28,6 +28,13 @@ export default class ToDoList {
     this.saveTasksToStorage();
   }
 
+  clearCompletedTasks() {
+    this.tasks = this.tasks.filter((task) => !task.completed);
+    this.updateIndexes();
+    this.saveTasksToStorage();
+    this.renderTasks();
+  }
+
   toggleCompletion(index) {
     this.tasks[index].completed = !this.tasks[index].completed;
     this.renderTasks();
