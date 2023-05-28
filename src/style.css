@@ -105,3 +105,9 @@ body {
   color: blue;
   box-sizing: border-box;
 }
+
+@media screen and (max-width: 48em) {
+  .center {
+    width: 95%;
+  }
+}
